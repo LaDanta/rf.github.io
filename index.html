@@ -154,31 +154,31 @@
             <div class="col-6">
               <div class="card bg-warning shadow-lg rounded-lg border-0">
                 <div class="px-4 py-5 text-center">
-                  <div class="h1 font-weight-bolder mb-0"><span>+701</span></div>
+                  <div class="h1 font-weight-bolder mb-0"><span>+740</span></div>
                   <h6 class="text-about">Projects</h6>
-                  <p class="text-dislaimer">2016 - 2023</p>
+                  <p class="text-dislaimer">2016 - <span class="currentYear"></span></p>
                 </div>
               </div>
               <div class="card shadow-lg rounded-lg border-0">
                 <div class="px-4 py-5 text-center">
-                  <div class="h1 font-weight-bolder mb-0"><span>+3000</span>
+                  <div class="h1 font-weight-bolder mb-0"><span>+15</span>
                     <span class="counter-extra ml-n2"></span>
                   </div>
-                  <h6 class="text-primary">Supports</h6>
+                  <h6 class="text-primary">Yrs. of Exp.</h6>
                 </div>
               </div>
             </div>
             <div class="col-6 pt-lg-6">
               <div class="card shadow-lg rounded-lg border-0">
                 <div class="px-4 py-5 text-center">
-                  <div class="h1 font-weight-bolder mb-0"><span>+300</span>
+                  <div class="h1 font-weight-bolder mb-0"><span>+1376</span>
                   </div>
                   <h6 class="text-primary">Active clients</h6>
                 </div>
               </div>
               <div class="card bg-primary shadow-lg rounded-lg border-0">
                 <div class="px-4 py-5 text-center">
-                  <div class="h1 font-weight-bolder text-white mb-0"><span>25</span></div>
+                  <div class="h1 font-weight-bolder text-white mb-0"><span>17</span></div>
                   <h6 class="text-white">collaborators</h6>
                 </div>
               </div>
@@ -564,7 +564,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="rfcopyright-text pera-content">
-                <p>© 2023 RF Ingenieros</p>
+                <p>© <span class="currentYear"></span> RF Ingenieros</p>
               </div>
             </div>
             <div class="col-md-8">
@@ -577,6 +577,17 @@
       <div class="rffooter-shape3 position-absolute"><img src="assets/images/diamap.png" alt="mapa de Guanacaste"></div>
   </section>
   <!-- END -->
+
+   <!-- Date Script -->
+ <script>
+  
+  const year = new Date().getFullYear();
+
+  document.querySelectorAll('.currentYear').forEach(el => {
+    el.textContent = year;
+  });
+ </script>
+ <!-- Date Script -->
 
   <!-- Global Js Important Files -->
   <script src="assets/js/jquery-3.5.0.min.js" type="text/javascript"></script>
